@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventario Equipos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <h1>Formulario de Equipo</h1>
+
+    <form action="/submit" method="POST">
+
+<label>Nombre de Estación:</label>
+        <br>
+        <input type="text" name="station_name" required>
+        <br><br>
+
+<label>Fecha de Inspección:</label>
+<label>DD/MM/YYYY</label>
+        <br>
+        <input type="text" name="inspection_date" required>
+        <br><br>
+
+<label>Nombre de Inspector:</label>
+        <br>
+        <input type="text" name="engineer_name" required>
+        <br><br>
+
+    <h2>Inspección de transición de estación</h2>
+
+    <button type="button" class="accordion">Canopy</button>
+    <div class="panel" id="canopyQuestions"></div>
+    <br><br>
+
+    <button type="button" class="accordion">Consola de Inventario y Tecnología</button>
+    <div class="panel" id="CITQuestions"></div>
+    <br><br>
+
+    <button type="button" class="accordion">Tubería Combustible</button>
+    <div class="panel" id="pipeQuestions"></div>
+    <br><br>
+
+    <button type="button" class="accordion">Dispensadores Combustible</button>
+    <div class="panel" id="disQuestions"></div>
+    <br><br>
+
+    <button type="button" class="accordion">Piso: Pista y Playa</button>
+    <div class="panel" id="pisoQuestions"></div>
+    <br><br>
+
+    <button type="button" class="accordion">Tanques</button>
+    <div class="panel" id="tankQuestions"></div>
+    <br><br>
+
+<div id="questions"></div>
+
+
+        <label>Comentarios:</label>
+        <br>
+        <textarea name="comments" rows="5" cols="30"></textarea>
+        <br><br>
+
+        <button type="submit">Entregar Inspección</button>
+
+    </form>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script> 
+</body>
+</html>
