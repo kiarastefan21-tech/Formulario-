@@ -80,7 +80,7 @@ document.getElementById("CITQuestions").innerHTML = `
         <textarea name="consola_marca"></textarea>
         <br><br> 
 
-    <h5>2. Referencia</h5>
+    <h5>2. Marca/Tipo:</h5>
         <textarea name="referencia"></textarea>
         <br><br> 
     
