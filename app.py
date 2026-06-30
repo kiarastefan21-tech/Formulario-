@@ -255,7 +255,7 @@ def submit():
         <div class="section"> 
         <h2>Consola de Inventario y Tecnología</h2>
         <p><span class="label">Marca de Consola:</span> {marca}</p>
-        <p><span class="label">Referencia:</span> {referencia}</p>
+        <p><span class="label">Marca/Tipo:</span> {referencia}</p>
         <p><span class="label">Display Touch:</span> {display}</p>
         <p><span class="label">Control Inventarios:</span> {cont_in}</p>
         <p><span class="label">Detección de Fuga:</span> {fuga}</p>
